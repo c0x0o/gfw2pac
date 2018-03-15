@@ -1,0 +1,15 @@
+{
+  "name": "gfw2pac",
+  "version": "0.0.1",
+  "description": "A tool which help you fetch the newest gfwlist and convert it to pacfile",
+  "main": "gfw2pac.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "nEk0",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.15.0",
+    "promisfy": "^1.1.4"
+  }
+}
