@@ -41,7 +41,7 @@ async function main(proxy, useTiny) {
         let tpl = await readfile('./tpl.pac', {encoding: 'utf8'});
 
         let result = tpl.replace('__RULES__', JSON.stringify(gfwlist))
-            .replace('__PROXY__', proxy ? proxy : '\'SOCKS5 127.0.0.1:1080\'');
+            .replace('__PROXY__', proxy ? `'${proxy}'` : '\'SOCKS5 127.0.0.1:1080\'');
 
         await writefile('./gfw.pac', result);
     } catch (e) {
